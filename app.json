@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "EcoWeather",
+    "slug": "EcoWeather",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/weather.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/weather.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app requires access to your location to provide accurate climate data.",
+        "NSLocationAlwaysUsageDescription": "Your location is needed for real-time weather and climate insights.",
+        "NSUserNotificationUsageDescription": "This app requires notifications to provide climate updates and alerts."
+      }
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "INTERNET",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "POST_NOTIFICATIONS"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/weather.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.ladla.EcoWeather"
+    },
+    "web": {
+      "favicon": "./assets/weather.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "97de20fe-4dd9-4a8c-bbe7-d1c3f5854533"
+      }
+    }
+  }
+}
